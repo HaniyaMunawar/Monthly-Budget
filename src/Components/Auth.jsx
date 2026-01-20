@@ -21,7 +21,7 @@ function Auth({ onLogin }) {
           textAlign: "center",
         }}
       >
-        <h2>Family Budget Planner 💰</h2>
+        <h2>Family Budget Planner</h2>
         <p>Manage your household finances easily</p>
         <input
           style={{
