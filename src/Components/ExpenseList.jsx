@@ -80,7 +80,7 @@ function ExpenseList({ transactions, onDelete, onEdit }) {
           {editingId === t.id ? (
             <button
               style={{
-                background: "#2196F3",
+                background: "linear-gradient(135deg, #2196F3, #4d26da)",
                 color: "white",
                 border: "none",
                 padding: 6,
@@ -95,7 +95,7 @@ function ExpenseList({ transactions, onDelete, onEdit }) {
           ) : (
             <button
               style={{
-                background: "#2196F3",
+                background: "linear-gradient(135deg, #2196F3, #4d26da",
                 color: "white",
                 border: "none",
                 padding: 6,

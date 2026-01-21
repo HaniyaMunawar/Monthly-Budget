@@ -1,6 +1,7 @@
 function Box({ title, value, color }) {
   return (
     <div
+    className="Card"
       style={{
         background: "white",
         padding: 20,

@@ -1,8 +1,9 @@
 function Navbar({ user }) {
   return (
-    <div
+    <div 
+    className="navbar"
       style={{
-        background: "#2196F3    ",
+        background: "linear-gradient(135deg, #4d26da, #2196F3)",
         color: "white",
         padding: 20,
         display: "flex",

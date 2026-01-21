@@ -9,7 +9,7 @@ function Auth({ onLogin }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(135deg,#2196F3,#4CAF50)",
+        background: "linear-gradient(135deg, #2196F3, #4d26da)",
       }}
     >
       <div
@@ -37,7 +37,7 @@ function Auth({ onLogin }) {
         />
         <button
           style={{
-            background: "#4CAF50",
+            background: "linear-gradient(135deg, #2196F3, #4d26da",
             color: "white",
             border: "none",
             padding: 12,

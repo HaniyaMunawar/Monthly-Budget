@@ -1,7 +1,7 @@
 import Box from "./Box";
 function Color({ income, expenses, savings }) {
   return (
-    <div
+    <div className="summary"
       style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 15 }}
     >
       <Box title="Income" value={income} color="#4CAF50" />

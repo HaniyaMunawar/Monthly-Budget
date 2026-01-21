@@ -31,10 +31,9 @@ function ExpenseForm({ onAdd }) {
       }}
     >
       <h3>Add Transaction</h3>
-      <label for="type" style={{marginRight: "10px"}}>Type:</label>
       <select
         style={{
-          width: "90%",
+          width: "100%",
           padding: 10,
           marginTop: 10,
           borderRadius: 8,
@@ -47,10 +46,9 @@ function ExpenseForm({ onAdd }) {
         <option value="expense">Expense</option>
       </select>
 
-      <label for="type" style={{marginRight: "20px"}}>For:</label>
       <select
         style={{
-          width: "90%",
+          width: "100%",
           padding: 10,
           marginTop: 10,
           borderRadius: 8,
@@ -104,7 +102,7 @@ function ExpenseForm({ onAdd }) {
 
       <input
         style={{
-          width: "100%",
+          width: "96%",
           padding: 10,
           marginTop: 10,
           borderRadius: 8,
@@ -118,7 +116,7 @@ function ExpenseForm({ onAdd }) {
 
       <button
         style={{
-          background: "#2196F3 ",
+          background: "linear-gradient(135deg, #2196F3, #4d26da) ",
           color: "white",
           border: "none",
           padding: 12,

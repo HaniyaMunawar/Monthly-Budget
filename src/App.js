@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./App.css";
 import Auth from "./Components/Auth.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import ExpenseForm from "./Components/ExpenseForm.jsx";
@@ -6,7 +7,7 @@ import ExpenseList from "./Components/ExpenseList.jsx";
 import Footer from "./Components/Footer.jsx";
 import Color from "./Components/Color.jsx";
 
-export default function App() {
+ function App() {
   const [user, setUser] = useState(null);
   const [transactions, setTransactions] = useState(() => {
     try {
@@ -25,7 +26,7 @@ export default function App() {
     const newTransaction = {
       ...transaction,
       id: Date.now(),
-      date: new Date().toLocaleString("en-US", { weekday: "short", day: "numeric", month: "short", year: "numeric" }),
+      date: new Date().toLocaleString("en-US", { weekday: "short", day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }),
     };
     setTransactions(prev => [...prev, newTransaction]);
   };
@@ -45,7 +46,7 @@ export default function App() {
     
     <div style={{background: "#f0f0f0", minHeight: "100vh", fontFamily: "Franklin Gothic Medium, 'Arial Narrow', Arial, sans-serif" }}>
       <Navbar user={user} />
-      <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, padding: 20}}>
+      <div className="dashboard" style={{display: "grid", gap: 20, padding: 20}}>
         <div style={{display: "flex", flexDirection: "column", gap: 20}}>
           <Color income={income} expenses={expenses} savings={savings} />
           <ExpenseForm onAdd={addTransaction} />
@@ -62,3 +63,4 @@ export default function App() {
     </div>
   );
 }
+export default App;

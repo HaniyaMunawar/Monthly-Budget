@@ -4,7 +4,7 @@ function Footer() {
       style={{
         textAlign: "center",
         padding: 15,
-        background: "#2196F3 ",
+        background: "linear-gradient(135deg, #4d26da, #2196F3) ",
         color: "white",
         marginTop: 20,
       }}
